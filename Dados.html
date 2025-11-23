@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta lang="pt-br">
+  <title>Dados Pessoais</title>
+</head>
+<body>
+  <header>
+    <!--img-->
+    <h1>Inscrição</h1>
+    <nav>
+      <a href="index.html">1<br>Dados de acesso</a>
+      <a href="Unidade.html">2<br>Unidade e curso</a>
+      <a href="Dados.html">3<br>Dados pessoais</a>
+      <a href="Pontuação.html">4<br>Pont. acrescida</a>
+      <a href="Confirmação.html">5<br>Confirmação</a>
+      <a href="Questionário.html">6<br>Questionário</a>
+      <a href="Conclusão.html">7<br>Conclusão</a>
+    </nav>
+  </header>
+  
+  <h1>Dados Pessoais</h1>
+  
+  <div class="Dados">
+    <form>
+      <label for="NomeComp">
+        Nome completo
+      </label>
+      <input type="text" id="NomeComp" name="Nome">
+      
+      <label for="CPF">
+        CPF
+      </label>
+      <input type="text" id="CPF" name="CPF">
+    
+      <label for="E-mailPrin">
+        E-mail Principal
+      </label>
+      <input type="text" id="E-mailPrin" name="E-mail principal">
+      
+      <label for="E-mailSec">
+        E-mail secundário
+      </label>
+      <input type="text" id="E-mailSec" name="E-mail secundário">
+      
+      <label for="NomeMãe">
+        Nome da Mãe
+      </label>
+      <input type="text" id="NomeMãe" name="Nome da Mãe">
+      
+      <label for="DataNasc">
+        Data de nascimento
+      </label>
+      <input type="date" id="DataNasc" name="Data de Nascimento">
+      
+      <label for="EstadoN">
+        Estado de Nascimento
+      </label>
+      <input list="EstadoNasc" name="Estado de Nascimento" id="EstadoN" placeholder="Selecione...">
+  <datalist id="EstadoNasc">
+    <option value="SP">
+    <option value="RJ">
+    <option value="MG">
+    <option value="SC">
+  </datalist>
+      <label for="CidadeN">
+        Cidade de Nascimento
+      </label>
+      <input list="CidadeNasc" name="Cidade de Nascimento" id="CidadeN" placeholder="Selecione...">
+  <datalist id="CidadeNasc">
+    <option value="Praia Grande">
+    <option value="São Vicente">
+    <option value="Santos">
+    <option value="São Paulo">
+  </datalist>
+      
+      <label for="Identidade">
+        Tipo de documento de identidade
+      </label>
+      <input list="IdenType" name="Tipo de Documento de Identidade" id="Identidade" placeholder="Selecione...">
+  <datalist id="IdenType">
+    <option value="Carteira de Identidade (RG)">
+    <option value="Carteira de Trabalho">
+  </datalist>
+      
+      <label for="NumID">
+        Número do documento de identidade
+      </label>
+      <input type="text" id="NumID" name="Número do documento de identidade">
+      
+      <label for="EstadoE">
+        Estado de emissão do documento de identidade
+      </label>
+      <input list="EstadoEmi" name="Estado de Emissão" id="EstadoE" placeholder="Selecione...">
+  <datalist id="EstadoEmi">
+    <option value="SP">
+    <option value="RJ">
+    <option value="MG">
+    <option value="SC">
+  </datalist>
+      
+      <label for="DataEmi">
+        Data de emissão do documento de identidade
+      </label>
+      <input type="date" id="DataEmi" name="Data de Emissão">
+      
+      <label for="EstadoCiv">
+        Estado civil
+      </label>
+      <input list="EstadoCivil" name="Estado Civil" id="EstadoCiv" placeholder="Selecione...">
+  <datalist id="EstadoCivil">
+    <option value="Solteiro">
+    <option value="Casado">
+    <option value="Divorciado">
+    <option value="Viúvo">
+  </datalist>
+      
+      <p>Sexo</p>
+      
+      <label for="Fem">
+        Feminino
+      </label>
+      <input type="radio" id="Fem" name="sexo">
+      <label for="Masc">
+        Masculino
+      </label>
+      <input type="radio" id="Masc" name="sexo">
+      <label for="Outro">
+        Prefiro não informar
+      </label>
+      <input type="radio" id="Outro" name="sexo">
+      
+      <p>Possui irmão gêmeo?</p>
+      
+      <label for="Não">
+        Não
+      </label>
+      <input type="radio" id="Não" name="gemeo">
+      <label for="Sim">
+        Sim
+      </label>
+      <input type="radio" id="Sim" name="gemeo">
+      
+      <section id="EndereçoComp">
+        
+        <h1>Endereço Completo</h1>
+        
+        <label for="End">
+        Endereço
+      </label>
+      <input type="text" id="End" name="Endereço">
+      
+      <label for="Num">
+        Número da casa
+      </label>
+      <input type="text" id="Num" name="Número">
+        
+         <label for="Bairro">
+        Bairro
+      </label>
+      <input list="BairroEnd" name="Bairro" id="Bairro" placeholder="Selecione...">
+  <datalist id="BairroEnd">
+    <option value="Antártica">
+    <option value="Guilhermina">
+    <option value="Caieiras">
+    <option value="Tupi">
+  </datalist>
+      
+      <label for="Município">
+        Município
+      </label>
+      <input list="MuniEnd" name="Município" id="Município" placeholder="Selecione...">
+  <datalist id="MuniEnd">
+    <option value="Praia Grande">
+    <option value="São Vicente">
+    <option value="Santos">
+    <option value="São Paulo">
+  </datalist>
+      
+      <label for="Estado">
+        Estado
+      </label>
+      <input list="EstadoEnd" name="Estado" id="Estado" placeholder="Selecione...">
+  <datalist id="EstadoEnd">
+    <option value="SP">
+    <option value="RJ">
+    <option value="MG">
+    <option value="SC">
+  </datalist>
+      
+      <label for="CEP">
+        CEP
+      </label>
+      <input type="text" id="CEP" name="CEP">
+      
+        
+      </section>
+      
+      <section id="Contato">
+        
+        <h1>Contato</h1>
+        
+        <label for="Tel">
+        Telefone
+      </label>
+      <input type="text" id="Tel" name="Telefone">
+      
+      <label for="Cel">
+        Celular
+      </label>
+      <input type="text" id="Cel" name="Celular">
+        
+      </section>
+      
+    </form>
+  </div>
+    
+  <button>
+        Salvar e ir para a próxima etapa
+      </button>
+      <a>Sair e continuar inscrição depois</a>
+  
+  <footer>
+    
+  </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta lang="pt-br">
+  <title>Unidade e Curso</title>
+</head>
+<body>
+  <header>
+    <!--img-->
+    <h1>Inscrição</h1>
+    <nav>
+<a href="index.html">1<br>Dados de acesso</a>
+      <a href="Unidade.html">2<br>Unidade e curso</a>
+      <a href="Dados.html">3<br>Dados pessoais</a>
+      <a href="Pontuação.html">4<br>Pont. acrescida</a>
+      <a href="Confirmação.html">5<br>Confirmação</a>
+      <a href="Questionário.html">6<br>Questionário</a>
+      <a href="Conclusão.html">7<br>Conclusão</a>
+    </nav>
+  </header>
+  <p>Para iniciar a inscrição para o Processo Seletivo Vestibulinho 1° semestre de 2026 selecione abaixo o município da Etec/Extensão de Etec em que pretende estudar.</p>
+  
+  <button>
+    Veja os cursos disponíveis
+  </button>
+    
+  <div class="Dados">
+    <section id="Treino">
+      <h1>O candidato é treineiro?</h1>
+    <form>
+        <label for="Não">
+        Não
+      </label>
+      <input type="radio" id="Não" name="treino">
+      <label for="Sim">
+        Sim
+      </label>
+      <input type="radio" id="Sim" name="treino">
+    </form>
+      
+      <i>Treineiro é um estudante que ainda não tem os requisitos de ingresso para o Ensino Médio(não irá concluir o ensino fundamental no final de 2025) e deseja participar do exame do Vestibulinho, para ganhar experiência com o formato da prova, familiarizar-se com o ambiente do exame e testar seus conhecimentos, o que o ajuda a se preparar para futuras provas que realmente contarão para sua aprovação</i>
+      
+      </section>
+    
+    </div>
+  <div class="Dados">
+    <section id="MunEtec">
+      
+      <h1>Município da Etec/Extensão da Etec</h1>
+      <p>Selecione o município da Etec/Extensão da Etec em que pretende estudar</p>
+   
+        <input list="Municípios" name="Município" id="Município" placeholder="Selecione...">
+  <datalist id="Municípios">
+    <option value="Praia Grande">
+    <option value="São Vicente">
+    <option value="Santos">
+    <option value="São Paulo">
+  </datalist>
+      
+    </section>
+      
+      <section id="Etec">
+        
+      <h1>Etec/Extensão da Etec</h1>
+      <p>Selecione a Etec/Extensão da Etec em que pretende estudar</p>
+   
+        <input list="Etecs" name="Etec" id="Etec" placeholder="Selecione...">
+  <datalist id="Etecs">
+    <option value="Sede">
+    <option value="Extensão">
+  </datalist>
+      
+    </section>
+      
+      <section id="Modalidade">
+      <h1>Modalidade</h1>
+      <p>Selecione a modalidade de ensino desejada.</p>
+   
+        <input list="Modalidades" name="Modalidade" id="Modalidade" placeholder="Selecione...">
+  <datalist id="Modalidades">
+    <option value="Ensino médio com Habilitação Técnica Profissional - 1° série - (M-tec)">
+    <option value="Curso Técnico (On-line) - Modalidade EAD - 1°môdulo">
+    <option value="Curso Técnico (Presencial) - 1°môdulo">
+  </datalist>
+      
+    </section>
+      
+            <section id="CursoPer">
+        
+      <h1>Curso e Período</h1>
+      <p>Selecione o curso e período em que pretende estudar</p>
+   
+        <input list="Cursos" name="Curso" id="Curso" placeholder="Selecione...">
+  <datalist id="Cursos">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Desenvolvimento de Sistemas - M-tec - (Manhã)">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Eletrônica - M-tec - (Tarde)">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Administração - M-tec - (Noite)">
+  </datalist>
+      
+      <div class="Area">
+        <h2>Pré-requisitos</h2>
+        <p>Possuir o certificado de conclusão do Ensino Fundamental nas modalidades: regular ou Educação de Jovens e Adultos - EJA ou Exame Nacional para Certificação de Competência de Jovens e Adultos - ENCCEJA</p>
+      </div>
+      
+    </section>
+    
+          <section id="Segunda">
+        
+      <h1>2° opção</h1>
+      <p>Selecione a 2° opção de curso em que pretende estudar</p>
+   
+        <input list="2ops" name="2op" id="2op" placeholder="Selecione...">
+  <datalist id="2ops">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Informática - M-tec - (Manhã)">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Logística - M-tec - (Tarde)">
+    <option value="Ensino Médio com Habilitação Profissional de Técnico em Agropecuária - M-tec - (Noite)">
+  </datalist>
+      
+    </section>
+      <div class="Area">
+        <p><b>Atenção:</b>no curso que não atingir a demanda 1,5 candidato/vaga, o candidato terá sua inscrição automaticamente remanejada para a 2° opção indicada. Caso a 2° opção indicada não atinja a demanda 1,5 candidato/vaga, o curso será objeto de estudo pela CGETEC para sua implantação</p>
+        <p>O curso que não atingir a demanda 1 candidato/vaga após a aplicação de exame será objeto de estudo pela CGETEC para sua implantação</p>
+      </div>
+  </div>
+      
+      <button>
+        Salvar e ir para a próxima etapa
+      </button>
+      <a>Sair e continuar inscrição depois</a>
+    
+  <footer>
+    
+  </footer>
+</body>
+</html>
