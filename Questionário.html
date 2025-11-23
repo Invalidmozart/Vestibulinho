@@ -1,109 +1,172 @@
-<!DOCTYPE html> 
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <meta lang="pt-br">
-  <title>Confirmação</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <!--img-->
-    <h1>Inscrição</h1>
-    <nav>
-     <a href="index.html">1<br>Dados de acesso</a>
-      <a href="Unidade.html">2<br>Unidade e curso</a>
-      <a href="Dados.html">3<br>Dados pessoais</a>
-      <a href="Pontuação.html">4<br>Pont. acrescida</a>
-      <a href="Confirmação.html">5<br>Confirmação</a>
-      <a href="Questionário.html">6<br>Questionário</a>
-      <a href="Conclusão.html">7<br>Conclusão</a>
-    </nav>
-  </header>
-  
-  
-  <main>
-    <h1>Questionario</h1>
-    <p>responda de forma honesta</p>
-    <form>
-      <h3>1-Qual sua escolaridade?</h3>
-      <input type="radio" name="p1" value="publica" id="publica">
-      <label for="publica">pública</label>
-        <input type="radio" name="p1" value="privado" id="privado">
-      <label for="privado">privado</label>
-      
-      <h3>2-Você fez ensino medio?</h3>
-      <input type="radio" value="sim" name="p2" id="sim">
-      <label for="sim">sim</label>
-      <input type="radio" value="não" name="p2" id="não">
-      <label for="não">não</label>
-        
-      <h3>3-caso sim, em que tipo de instituição foi?</h3>
-      <input type="radio" value="pub" name="p3" id="pub">
-      <label for="pub">pública</label>
-      <input type="radio" value="pri" name="p3" id="pri">
-      <label for="pri">privado</label>
-      <input type="radio" value="tec" name="p3" id="tec">
-      <label for="tec">tecnico</label>
-      
-      <h3>4-quantas pessoas moram na sua casa? (incluindo você)</h3>
-      <select>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="610">6 a 10 pessoas</option>
-        <option value="11">11 ou mais</option>
-      </select>
-      
-      <h3>5-você trabalha?</h3>
-      <input type="radio" value="n" id="n" name="p5">
-      <label for="n">não</label>
-      <input type="radio" value="s" id="s" name="p5">
-      <label for="s">sim</label>
-      
-      <h3>6-caso sim, seu salario equivale a quantos salarios minimos?</h3>
-      <select>
-        <option value="menos">menos de 1</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="mais">5+</option>
-      </select>
-      
-      <h3>7-outras pessoas trabalham na sua casa?</h3>
-      <input type="radio" value="n" id="n" name="p7">
-      <label for="n">não</label>
-      <input type="radio" value="s" id="s" name="p7">
-      <label for="s">sim</label>
-      
-      <h3>8-caso sim, quantas?</h3>
-      <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-         <option value="610">6 a 10 ou mais</option>
-        <option value="todo">todo mundo</option>
-      </select>
-      
-      <h3>9-Como você descobriu sobre a etec?</h3>
-      <input type="text">
-      
-      <h3>10-Por que você quer cursar a etec?</h3>
-      <input type="text">
-    </form>
-  </main>
-    
-  <button>
-        Salvar e ir para a próxima etapa
-      </button>
-      <a>Sair e continuar inscrição depois</a>
-  
-  <footer>
-    
-  </footer>
+<body class="bg-light">
+
+  <div class="w-100" style="height: 250px; background: url('vestibulinho.jpg') center/cover no-repeat;"></div>
+
+  <div class="container p-0 mt-n4">
+
+    <div class="bg-danger py-3 position-relative">
+      <div class="container">
+        <h1 class="h4 text-white m-0">Inscrição</h1>
+      </div>
+    </div>
+
+    <div class="bg-light border border-top-0">
+      <div class="container py-3">
+        <div class="d-flex justify-content-between text-center flex-wrap">
+          
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">1</div>
+            <small class="text-muted">Dados de acesso</small>
+          </div>
+          
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">2</div>
+            <small class="text-muted">Unidade e curso</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">3</div>
+            <small class="text-muted">Dados pessoais</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">4</div>
+            <small class="text-muted">Pont. acrescida</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">5</div>
+            <small class="text-muted">Confirmação</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-danger text-white" style="width:36px; height:36px;">6</div>
+            <small class="text-muted">Questionário</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">7</div>
+            <small class="text-muted">Conclusão</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 bg-white shadow-sm p-4 p-md-5 border border-top-0">
+
+        <h4 class="mb-3">Questionário</h4>
+        <p class="text-muted">Responda de forma honesta.</p>
+
+        <form class="row g-4">
+
+          <div class="col-12">
+            <label class="form-label">1 - Qual sua escolaridade?</label>
+            <div class="d-flex gap-3">
+              <div><input type="radio" name="p1" id="p1pub" value="publica"> <label for="p1pub">Pública</label></div>
+              <div><input type="radio" name="p1" id="p1pri" value="privado"> <label for="p1pri">Privado</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">2 - Você fez ensino médio?</label>
+            <div class="d-flex gap-3">
+              <div><input type="radio" name="p2" id="p2sim" value="sim"> <label for="p2sim">Sim</label></div>
+              <div><input type="radio" name="p2" id="p2nao" value="nao"> <label for="p2nao">Não</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">3 - Caso sim, em que tipo de instituição foi?</label>
+            <div class="d-flex gap-3">
+              <div><input type="radio" name="p3" id="p3pub" value="pub"> <label for="p3pub">Pública</label></div>
+              <div><input type="radio" name="p3" id="p3pri" value="pri"> <label for="p3pri">Privado</label></div>
+              <div><input type="radio" name="p3" id="p3tec" value="tec"> <label for="p3tec">Técnico</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">4 - Quantas pessoas moram na sua casa? (incluindo você)</label>
+            <select class="form-select">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6-10">6 a 10 pessoas</option>
+              <option value="11+">11 ou mais</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">5 - Você trabalha?</label>
+            <div class="d-flex gap-3">
+              <div><input type="radio" name="p5" id="p5nao" value="n"> <label for="p5nao">Não</label></div>
+              <div><input type="radio" name="p5" id="p5sim" value="s"> <label for="p5sim">Sim</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">6 - Caso sim, seu salário equivale a quantos salários mínimos?</label>
+            <select class="form-select">
+              <option value="menos1">Menos de 1</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">7 - Outras pessoas trabalham na sua casa?</label>
+            <div class="d-flex gap-3">
+              <div><input type="radio" name="p7" id="p7nao" value="n"> <label for="p7nao">Não</label></div>
+              <div><input type="radio" name="p7" id="p7sim" value="s"> <label for="p7sim">Sim</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">8 - Caso sim, quantas?</label>
+            <select class="form-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6-10">6 a 10 ou mais</option>
+              <option value="todos">Todo mundo</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">9 - Como você descobriu sobre a ETEC?</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">10 - Por que você quer cursar a ETEC?</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-12 d-flex justify-content-between border-top pt-4 mt-3">
+            <a href="Conclusão.html" class="btn btn-danger px-4">Salvar e ir para a próxima etapa</a>
+            <a href="#" class="text-decoration-none align-self-center">Sair e continuar inscrição depois</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
