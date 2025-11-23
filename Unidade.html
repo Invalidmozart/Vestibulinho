@@ -1,137 +1,172 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <meta lang="pt-br">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unidade e Curso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <!--img-->
-    <h1>Inscrição</h1>
-    <nav>
-<a href="index.html">1<br>Dados de acesso</a>
-      <a href="Unidade.html">2<br>Unidade e curso</a>
-      <a href="Dados.html">3<br>Dados pessoais</a>
-      <a href="Pontuação.html">4<br>Pont. acrescida</a>
-      <a href="Confirmação.html">5<br>Confirmação</a>
-      <a href="Questionário.html">6<br>Questionário</a>
-      <a href="Conclusão.html">7<br>Conclusão</a>
-    </nav>
-  </header>
-  <p>Para iniciar a inscrição para o Processo Seletivo Vestibulinho 1° semestre de 2026 selecione abaixo o município da Etec/Extensão de Etec em que pretende estudar.</p>
-  
-  <button>
-    Veja os cursos disponíveis
-  </button>
-    
-  <div class="Dados">
-    <section id="Treino">
-      <h1>O candidato é treineiro?</h1>
-    <form>
-        <label for="Não">
-        Não
-      </label>
-      <input type="radio" id="Não" name="treino">
-      <label for="Sim">
-        Sim
-      </label>
-      <input type="radio" id="Sim" name="treino">
-    </form>
-      
-      <i>Treineiro é um estudante que ainda não tem os requisitos de ingresso para o Ensino Médio(não irá concluir o ensino fundamental no final de 2025) e deseja participar do exame do Vestibulinho, para ganhar experiência com o formato da prova, familiarizar-se com o ambiente do exame e testar seus conhecimentos, o que o ajuda a se preparar para futuras provas que realmente contarão para sua aprovação</i>
-      
-      </section>
-    
+<body class="bg-light">
+
+  <div class="w-100" style="height: 250px; background: url('vestibulinho.jpg') center/cover no-repeat;"></div>
+
+  <div class="container p-0 mt-n4">
+
+    <div class="bg-danger py-3 position-relative">
+      <div class="container">
+        <h1 class="h4 text-white m-0">Inscrição</h1>
+      </div>
     </div>
-  <div class="Dados">
-    <section id="MunEtec">
-      
-      <h1>Município da Etec/Extensão da Etec</h1>
-      <p>Selecione o município da Etec/Extensão da Etec em que pretende estudar</p>
-   
-        <input list="Municípios" name="Município" id="Município" placeholder="Selecione...">
-  <datalist id="Municípios">
-    <option value="Praia Grande">
-    <option value="São Vicente">
-    <option value="Santos">
-    <option value="São Paulo">
-  </datalist>
-      
-    </section>
-      
-      <section id="Etec">
-        
-      <h1>Etec/Extensão da Etec</h1>
-      <p>Selecione a Etec/Extensão da Etec em que pretende estudar</p>
-   
-        <input list="Etecs" name="Etec" id="Etec" placeholder="Selecione...">
-  <datalist id="Etecs">
-    <option value="Sede">
-    <option value="Extensão">
-  </datalist>
-      
-    </section>
-      
-      <section id="Modalidade">
-      <h1>Modalidade</h1>
-      <p>Selecione a modalidade de ensino desejada.</p>
-   
-        <input list="Modalidades" name="Modalidade" id="Modalidade" placeholder="Selecione...">
-  <datalist id="Modalidades">
-    <option value="Ensino médio com Habilitação Técnica Profissional - 1° série - (M-tec)">
-    <option value="Curso Técnico (On-line) - Modalidade EAD - 1°môdulo">
-    <option value="Curso Técnico (Presencial) - 1°môdulo">
-  </datalist>
-      
-    </section>
-      
-            <section id="CursoPer">
-        
-      <h1>Curso e Período</h1>
-      <p>Selecione o curso e período em que pretende estudar</p>
-   
-        <input list="Cursos" name="Curso" id="Curso" placeholder="Selecione...">
-  <datalist id="Cursos">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Desenvolvimento de Sistemas - M-tec - (Manhã)">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Eletrônica - M-tec - (Tarde)">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Administração - M-tec - (Noite)">
-  </datalist>
-      
-      <div class="Area">
-        <h2>Pré-requisitos</h2>
-        <p>Possuir o certificado de conclusão do Ensino Fundamental nas modalidades: regular ou Educação de Jovens e Adultos - EJA ou Exame Nacional para Certificação de Competência de Jovens e Adultos - ENCCEJA</p>
+
+    <div class="bg-light border border-top-0">
+      <div class="container py-3">
+        <div class="d-flex justify-content-between text-center flex-wrap">
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">1</div>
+            <small class="text-muted">Dados de acesso</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-danger text-white" style="width:36px; height:36px;">2</div>
+            <small class="text-muted">Unidade e curso</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">3</div>
+            <small class="text-muted">Dados pessoais</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">4</div>
+            <small class="text-muted">Pont. acrescida</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">5</div>
+            <small class="text-muted">Confirmação</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">6</div>
+            <small class="text-muted">Questionário</small>
+          </div>
+
+          <div>
+            <div class="rounded-circle d-flex justify-content-center align-items-center mx-auto bg-white border text-muted" style="width:36px; height:36px;">7</div>
+            <small class="text-muted">Conclusão</small>
+          </div>
+
+        </div>
       </div>
-      
-    </section>
-    
-          <section id="Segunda">
-        
-      <h1>2° opção</h1>
-      <p>Selecione a 2° opção de curso em que pretende estudar</p>
-   
-        <input list="2ops" name="2op" id="2op" placeholder="Selecione...">
-  <datalist id="2ops">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Informática - M-tec - (Manhã)">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Logística - M-tec - (Tarde)">
-    <option value="Ensino Médio com Habilitação Profissional de Técnico em Agropecuária - M-tec - (Noite)">
-  </datalist>
-      
-    </section>
-      <div class="Area">
-        <p><b>Atenção:</b>no curso que não atingir a demanda 1,5 candidato/vaga, o candidato terá sua inscrição automaticamente remanejada para a 2° opção indicada. Caso a 2° opção indicada não atinja a demanda 1,5 candidato/vaga, o curso será objeto de estudo pela CGETEC para sua implantação</p>
-        <p>O curso que não atingir a demanda 1 candidato/vaga após a aplicação de exame será objeto de estudo pela CGETEC para sua implantação</p>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10 bg-white shadow-sm p-4 p-md-5 border border-top-0">
+
+        <p class="text-muted mb-4">
+          Para iniciar a inscrição para o Processo Seletivo Vestibulinho 1° semestre de 2026 selecione abaixo o município da Etec/Extensão de Etec em que pretende estudar.
+        </p>
+
+        <button class="btn btn-danger mb-4">Veja os cursos disponíveis</button>
+
+        <form class="row g-4">
+
+          <div class="col-12">
+            <h5 class="mb-2">O candidato é treineiro?</h5>
+
+            <div class="d-flex gap-4">
+              <div>
+                <input type="radio" id="Não" name="treino">
+                <label for="Não" class="ms-1">Não</label>
+              </div>
+
+              <div>
+                <input type="radio" id="Sim" name="treino">
+                <label for="Sim" class="ms-1">Sim</label>
+              </div>
+            </div>
+
+            <p class="small text-muted mt-2">
+              Treineiro é um estudante que ainda não tem os requisitos de ingresso para o Ensino Médio...
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-bold">Município da Etec/Extensão da Etec</label>
+            <input list="Municípios" class="form-control" placeholder="Selecione...">
+            <datalist id="Municípios">
+              <option value="Praia Grande">
+              <option value="São Vicente">
+              <option value="Santos">
+              <option value="São Paulo">
+            </datalist>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-bold">Etec/Extensão da Etec</label>
+            <input list="Etecs" class="form-control" placeholder="Selecione...">
+            <datalist id="Etecs">
+              <option value="Sede">
+              <option value="Extensão">
+            </datalist>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-bold">Modalidade</label>
+            <input list="Modalidades" class="form-control" placeholder="Selecione...">
+            <datalist id="Modalidades">
+              <option value="Ensino médio com Habilitação Técnica Profissional - 1° série - (M-tec)">
+              <option value="Curso Técnico (On-line) - Modalidade EAD - 1° módulo">
+              <option value="Curso Técnico (Presencial) - 1° módulo">
+            </datalist>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-bold">Curso e Período</label>
+            <input list="Cursos" class="form-control" placeholder="Selecione...">
+            <datalist id="Cursos">
+              <option value="Técnico em Desenvolvimento de Sistemas - Manhã">
+              <option value="Técnico em Eletrônica - Tarde">
+              <option value="Técnico em Administração - Noite">
+            </datalist>
+
+            <div class="mt-3 p-3 bg-light border rounded">
+              <h6 class="fw-bold">Pré-requisitos</h6>
+              <p class="small text-muted m-0">
+                Possuir o certificado de conclusão do Ensino Fundamental...
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label fw-bold">2° opção</label>
+            <input list="2ops" class="form-control" placeholder="Selecione...">
+            <datalist id="2ops">
+              <option value="Técnico em Informática - Manhã">
+              <option value="Técnico em Logística - Tarde">
+              <option value="Técnico em Agropecuária - Noite">
+            </datalist>
+          </div>
+          
+
+          <div class="col-12">
+            <p class="small text-muted m-0">
+              <b>Atenção: </b>no curso que não atingir a demanda 1,5 candidato/vaga...
+            </p>
+          </div>
+
+          <div class="col-12 d-flex justify-content-between border-top pt-4 mt-3">
+            <a href="Dados.html" class="btn btn-danger px-4">Salvar e ir para a próxima etapa</a>
+            <a href="#" class="text-decoration-none align-self-center">Sair e continuar inscrição depois</a>
+          </div>
+
+        </form>
       </div>
+    </div>
+
   </div>
-      
-      <button>
-        Salvar e ir para a próxima etapa
-      </button>
-      <a>Sair e continuar inscrição depois</a>
-    
-  <footer>
-    
-  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
