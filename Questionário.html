@@ -21,9 +21,81 @@
     </nav>
   </header>
   
-  <div class="Dados">
-    
-  </div>
+  
+  <main>
+    <h1>Questionario</h1>
+    <p>responda de forma honesta</p>
+    <form>
+      <h3>1-Qual sua escolaridade?</h3>
+      <input type="radio" name="p1" value="publica" id="publica">
+      <label for="publica">pública</label>
+        <input type="radio" name="p1" value="privado" id="privado">
+      <label for="privado">privado</label>
+      
+      <h3>2-Você fez ensino medio?</h3>
+      <input type="radio" value="sim" name="p2" id="sim">
+      <label for="sim">sim</label>
+      <input type="radio" value="não" name="p2" id="não">
+      <label for="não">não</label>
+        
+      <h3>3-caso sim, em que tipo de instituição foi?</h3>
+      <input type="radio" value="pub" name="p3" id="pub">
+      <label for="pub">pública</label>
+      <input type="radio" value="pri" name="p3" id="pri">
+      <label for="pri">privado</label>
+      <input type="radio" value="tec" name="p3" id="tec">
+      <label for="tec">tecnico</label>
+      
+      <h3>4-quantas pessoas moram na sua casa? (incluindo você)</h3>
+      <select>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="610">6 a 10 pessoas</option>
+        <option value="11">11 ou mais</option>
+      </select>
+      
+      <h3>5-você trabalha?</h3>
+      <input type="radio" value="n" id="n" name="p5">
+      <label for="n">não</label>
+      <input type="radio" value="s" id="s" name="p5">
+      <label for="s">sim</label>
+      
+      <h3>6-caso sim, seu salario equivale a quantos salarios minimos?</h3>
+      <select>
+        <option value="menos">menos de 1</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="mais">5+</option>
+      </select>
+      
+      <h3>7-outras pessoas trabalham na sua casa?</h3>
+      <input type="radio" value="n" id="n" name="p7">
+      <label for="n">não</label>
+      <input type="radio" value="s" id="s" name="p7">
+      <label for="s">sim</label>
+      
+      <h3>8-caso sim, quantas?</h3>
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+         <option value="610">6 a 10 ou mais</option>
+        <option value="todo">todo mundo</option>
+      </select>
+      
+      <h3>9-Como você descobriu sobre a etec?</h3>
+      <input type="text">
+      
+      <h3>10-Por que você quer cursar a etec?</h3>
+      <input type="text">
+    </form>
+  </main>
     
   <button>
         Salvar e ir para a próxima etapa
